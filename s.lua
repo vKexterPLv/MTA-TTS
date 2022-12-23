@@ -3,7 +3,11 @@
 ]]--
 
 function TTS(plr,mes)
-	triggerClientEvent("playTTS",resourceRoot,plr,mes)
+	if plr and mes then
+		triggerClientEvent("playTTS",resourceRoot,plr,mes)
+		return true
+	end
+	return false
 end
 
 addCommandHandler("ttstoall",function(plr,cmd,...)
