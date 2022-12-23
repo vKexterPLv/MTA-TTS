@@ -1,3 +1,7 @@
+--[[
+    Developers: KexterPL / Discord: Belzebub#2137
+]]--
+
 function TTS(plr,mes)
 	triggerClientEvent("playTTS",resourceRoot,plr,mes)
 end
